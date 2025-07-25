@@ -3,7 +3,7 @@
 #---------------------
 # THEME. Leave Lines 4-6 alone.
 #---------------------
-remote_theme: opaquepublisher/OpaqueOnlinePublishingPlatform
+remote_theme: OpaquePublisher/OpaquePublisher.github.io
 repository: 'Your Repository Name' # change this to your repository name
 
 ##############################################
