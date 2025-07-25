@@ -1,11 +1,13 @@
 ##############################################
-# START YOUR CONFIGURATION HERE! For more info, visit https://digitalarcplatform.github.io/documentation/docs/publishSite/
-# THEME.
+# START YOUR CONFIGURATION HERE! For more info, visit https://digitalarcplatform.kalanicraig.com/quickstart
 #---------------------
-#remote-theme: digitalarcplatform
+# THEME. Leave Lines 4-6 alone.
+#---------------------
+remote_theme: opaquepublisher/OpaqueOnlinePublishingPlatform
+repository: 'Your Repository Name' # change this to your repository name
 
 ##############################################
-# WHAT IS ALL THIS STUFF? SOME VOCABULARY.
+# WHAT IS ALL THIS STUFF?
 #---------------------
 # _config is easy. Most web sites have configuration files.
 # .yml means YAML. It's the data that runs your site.
@@ -40,39 +42,33 @@
 #---------------------
 
 # Title of your website
-title: "Opaque Online Publishing Platform"
+title: "A Test Publication"
 
 # Subtitle of your website. Leave blank if you want to.
-subtitle: "A digital publishing platform with sensitive-image and -text support"
+subtitle: "A subtitle"
 
 # A longer description of your site (max 150 words). Helps search engines find you.
-description: "This publishing platform provides support for digital publications that have sensitive-image content for which audience-selected redaction is valuable. From dissertations and monographs to novels and other long-form genres, the OOPP provides a built-in option to show and hide fully- or partially-redacted images, with all the support of automated tables of contents, footnotes, and a static-site format that makes maintaining and preserving an online publication easier."
+description: "Some long description about this test publication"
 
 # These credits show up in the includes/_footer.html
 # Main author of the website.
-author: "OOPP"
-authorname : "The OOPP Team"
-sitelogo: site_logo.jpg
-placeholderimg: placeholder.png
+author: "shortname"
+authorname : "Full Name"
+
+# To change the photo on your homepage, open the assets folder in your Github repo, then open the img folder. Upload a photo there. Add only the name of the photo and its extension here. E.g. "alternate_logo.png")
+sitelogo: "site_logo.png"
+placeholderimg: "placeholder.png"
 
 # What year did you start up this community project?
 sitedate : 2025
 
 # Other community social media. Leave blank if you don't have these.
-email : ""
-website : ""
-twitter : 
-github : 
-facebook : 
-instagram : 
-
-##############################################
-# COPYRIGHT PAGE
-#---------------------
-# If your collection is part of a larger site, remove the "#" before the copyright_page placeholder and paste in your about-us or contact link.
-# EXAMPLE: copyright_page: "https://yoursite.com/aboutus"
-# Otherwise, make sure you update the copyright.md file in the "pages" folder
-# copyright_page: 
+email : "YourEmail@gmail.com"
+website : "YourWebsite.com"
+twitter : ""
+github : ""
+facebook : ""
+instagram : ""
 
 # If you need to know how many people visit your site, go to https://analytics.google.com/
 # When you finish the setup assistant, it will give you a Measurement ID: G-ABCDEFGHIJ
@@ -92,33 +88,36 @@ google_g4_analytics_id:
 #fontchoice: raleway # An elegant sans-serif font with bold sans-serif accents
 #fontchoice: roboto # A clean sans-serif font with simple serif accents
 #fontchoice: slab # A funky slab font with clean sans-serif accents
-fontchoice: source # A modern serif font with clean sans-serif accents
+#fontchoice: source # A modern serif font with clean sans-serif accents
+
+fontchoice: archivonarrow
 
 # Choose the COLORS you'd like to use.
 # You can see these color choices in action at https://digitalarcplatform.kalanicraig.com/docs/
 # Uncomment the line for the color you like. Comment out all of the other lines.
 
-#colorchoice: dusk # Dusky purple and olive green
-#colorchoice: lavenderred # Purple-grey with orange-red
-#colorchoice: leafgreen # Leafy green and medium brown
-#colorchoice: marigold # Near-black with marigold yellow
 #colorchoice: navy # Navy with bright teal and grey
-#colorchoice: red # Black, crimson and grey
+#colorchoice: leafgreen # Leafy green and medium brown
 #colorchoice: tan # Tan and deep brown with flame-bright orange
 #colorchoice: teal # Bright teal with bright orange-yellow accents
-colorchoice: whitewithaccent # White with black text and the accent of your choice from the colors below
-#colorchoice: custom
+#colorchoice: marigold # Near-black with marigold yellow
+#colorchoice: red # Black, crimson and grey
+#colorchoice: lavenderred # Purple-grey with orange-red
+#colorchoice: dusk # Dusky purple and olive green
+#colorchoice: whitewithaccent # White with an accent color (see below)
+
+colorchoice: dusk
 
 # If you chose white with an accent color, choose the ACCENT you'd like to use.
 # You can see these color choices in action at https://digitalarcplatform.kalanicraig.com/docs/
 # Uncomment the line for the color you like. Comment out all of the other lines.
 
-#accentchoice: accent-darkred # Dark red
+accentchoice: accent-darkred # Dark red
 #accentchoice: accent-red # Bright red
 #accentchoice: accent-pink # Deep pink
 #accentchoice: accent-orange # Tangerine Orange
 #accentchoice: accent-brown # Warm brown
-accentchoice: accent-green # Kelly green
+#accentchoice: accent-green # Kelly green
 #accentchoice: accent-navy # Navy blue
 #accentchoice: accent-blue # Medium blue
 #accentchoice: accent-bluegrey # Blue Grey
@@ -128,7 +127,8 @@ accentchoice: accent-green # Kelly green
 ##############################################
 # ORGANIZING YOUR COLLECTION
 #---------------------
-# These collections take the basic files you put together for each item in your collection and display them with filtering buttons based on the tags, formats, and categories you include in each item file.
+# These collections take the basic files you put together for each item in your collection and auto-group and display them.
+# This takes each item in your archive collection and displays it
 collections:
   narrative:
     output: true
